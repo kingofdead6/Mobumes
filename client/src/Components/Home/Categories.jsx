@@ -7,26 +7,17 @@ import axios from "axios";
 import { API_BASE_URL } from "../../../api";
 
 const containerVariants = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.12 },
-  },
+
 };
 
 const titleVariants = {
-  hidden: { opacity: 0, y: 30 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
+ 
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  hidden: {  scale: 0.95 },
   show: {
-    opacity: 1,
-    y: 0,
+  
     scale: 1,
     transition: { duration: 0.6, ease: "easeOut" },
   },
