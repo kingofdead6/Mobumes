@@ -37,7 +37,7 @@ export default function AboutHero() {
 
             <div className="mt-10">
               <Link
-                to="/contact"
+                to="/sell-us-something"
                 className="inline-block px-8 py-4 bg-stone-900 hover:bg-blue-700 text-white font-medium rounded-2xl transition"
               >
                 Nous contacter
