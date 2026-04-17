@@ -9,6 +9,7 @@ import categoryRoutes from './Routes/categoriesRoutes.js';
 import deliveryAreaRoutes from './Routes/deliveryAreaRoutes.js';
 import orderRoutes from './Routes/orderRoutes.js';
 import galleryRoutes from './Routes/galleryRoutes.js';
+import sellRequestRoutes from './Routes/sellRequestRoutes.js';
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use('/api/categories', categoryRoutes);
 app.use('/api/delivery-areas', deliveryAreaRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/gallery', galleryRoutes);
+app.use('/api/sell-requests', sellRequestRoutes);
 
 app.use(errorHandler);
 

@@ -23,6 +23,8 @@ import NotFound from "./Pages/NotFound";
 import ScrollToTop from "./Components/Shared/ScrollToTop";
 import Aboutus from "./Pages/Aboutus";
 import AdminGallery from "./Components/Admin/AdminGallery";
+import ContactPage from "./Pages/Contact";
+import AdminSellRequests from "./Components/Admin/AdminSellRequests";
 
 function App() {
   return (
@@ -39,7 +41,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<FinalizeOrder />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/sell-us-something" element={<Login />} />
+        <Route path="/sell-us-something" element={<ContactPage />} />
 
         {/* Protected Admin Routes */}
         <Route element={<ProtectedRoute />}>
@@ -50,6 +52,7 @@ function App() {
           <Route path="/admin/users" element={<AdminUsers />} />
           <Route path="/admin/orders" element={<AdminOrders />} />
           <Route path="/admin/gallery" element={<AdminGallery />} /> 
+          <Route path="/admin/sell-requests" element={<AdminSellRequests />} />
         </Route>
 
         {/* 404 Route */}
