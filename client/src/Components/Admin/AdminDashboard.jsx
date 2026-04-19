@@ -56,7 +56,10 @@ export default function AdminDashboard() {
   const adminSections = [
     { path: "/admin/orders", title: t.manageOrders, description: t.manageOrdersDesc },
     { path: "/admin/products", title: t.manageProducts, description: t.manageProductsDesc },
-    { path: "/admin/gallery", title: "Manage Gallery", description: "Manage your gallery images" }
+    { path: "/admin/gallery", title: "Manage Gallery", description: "Manage your gallery images" },
+    { path: "/admin/sell-requests", title: "Manage Sell Requests", description: "Manage user sell requests" },
+    { path: "/admin/contacts", title: "Manage Contact Messages", description: "Manage user contact messages" },
+    { path: "/admin/repair-requests", title: "Manage Repair Requests", description: "Manage user repair requests" }
   ];
 
   const superadminSections = [
@@ -64,9 +67,7 @@ export default function AdminDashboard() {
     { path: "/admin/users", title: t.manageUsers, description: t.manageUsersDesc },
     { path: "/admin/categories", title: t.manageCategories, description: t.manageCategoriesDesc },
     { path: "/admin/delivery-areas", title: t.manageDeliveryAreas, description: t.manageDeliveryAreasDesc },
-    { path: "/admin/sell-requests", title: "Manage Sell Requests", description: "Manage user sell requests" },
-    { path: "/admin/contacts", title: "Manage Contact Messages", description: "Manage user contact messages" },
-    { path: "/admin/repair-requests", title: "Manage Repair Requests", description: "Manage user repair requests" }
+    
 
   ];
 
