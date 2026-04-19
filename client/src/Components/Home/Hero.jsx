@@ -64,14 +64,14 @@ export default function Hero() {
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
-              to="/produits"
+              to="/products"
               className="px-8 py-4 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition"
             >
               Voir les produits
             </Link>
 
             <Link
-              to="/contact"
+              to="/sell-us-something"
               className="px-8 py-4 border border-white text-white rounded-lg hover:bg-white hover:text-black transition"
             >
               Demander un devis

@@ -256,7 +256,7 @@ export default function ProductDetailsPage() {
             )}
 
             {/* Quantity */}
-            <div>
+           {/*  <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
                 {t.quantity || "Quantité"}
               </h3>
@@ -279,13 +279,13 @@ export default function ProductDetailsPage() {
               </div>
             </div>
 
-            {/* Add to Cart */}
+           
             <button
               onClick={handleAddToCart}
               className="w-full py-5 bg-stone-900 hover:bg-blue-800 text-white text-lg font-medium rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
             >
               {t.addToCart || "Ajouter au panier"}
-            </button>
+            </button> */}
           </div>
         </div>
 

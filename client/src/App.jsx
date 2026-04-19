@@ -14,7 +14,7 @@ import ProtectedRoute from "./Components/Shared/ProtectedRoute";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
 import AdminProducts from "./Components/Admin/AdminProducts";
 import AdminCategories from "./Components/Admin/AdminCategories";
-import AdminDeliveryAreas from "./Components/Admin/AdminDeliveryAreas"; // ← Fixed typo
+import AdminDeliveryAreas from "./Components/Admin/AdminDeliveryAreas"; 
 import AdminUsers from "./Components/Admin/AdminUsers";
 import AdminOrders from "./Components/Admin/AdminOrders";
 
@@ -23,8 +23,9 @@ import NotFound from "./Pages/NotFound";
 import ScrollToTop from "./Components/Shared/ScrollToTop";
 import Aboutus from "./Pages/Aboutus";
 import AdminGallery from "./Components/Admin/AdminGallery";
-import ContactPage from "./Pages/Contact";
+import ContactPage from "./Pages/Contact.tsx";
 import AdminSellRequests from "./Components/Admin/AdminSellRequests";
+import AdminContactMessages from "./Components/Admin/AdminContactMessages.jsx";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path="/admin/orders" element={<AdminOrders />} />
           <Route path="/admin/gallery" element={<AdminGallery />} /> 
           <Route path="/admin/sell-requests" element={<AdminSellRequests />} />
+          <Route path="/admin/contacts" element={<AdminContactMessages />} />
         </Route>
 
         {/* 404 Route */}

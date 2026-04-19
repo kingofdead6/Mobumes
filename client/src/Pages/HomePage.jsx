@@ -8,7 +8,7 @@ import Gallery from "../Components/Home/Gallery";
 import CTASection from "../Components/Home/CTA";
 
 import BG from "../assets/BG.mp4";
-import BG_MOBILE from "../assets/BG2.mp4"; // 👈 add this
+import BG_MOBILE from "../assets/BG2.mp4"; 
 
 const HomePage = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -36,7 +36,7 @@ const HomePage = () => {
       {showIntro && (
         <div className="fixed inset-0 z-50 bg-black flex items-center justify-center">
           <video
-            key={isMobile ? "mobile" : "desktop"} // 🔥 forces reload when switching
+            key={isMobile ? "mobile" : "desktop"} 
             className="w-full h-full object-cover"
             autoPlay
             muted

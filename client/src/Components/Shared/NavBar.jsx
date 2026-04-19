@@ -153,7 +153,7 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="flex items-center gap-6">
             {/* Cart Icon - Only for customers */}
-            {!isAdmin && (
+           {/* {!isAdmin && (
               <Link to="/cart" className="relative group">
                 <ShoppingCartIcon className="w-8 h-8 text-stone-700 group-hover:text-blue-700 transition" />
                 {cartCount > 0 && (
@@ -162,7 +162,7 @@ export default function Navbar() {
                   </span>
                 )}
               </Link>
-            )}
+            )} */}
             
 
             {isAdmin && (
