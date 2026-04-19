@@ -66,7 +66,8 @@ export default function AdminDashboard() {
     { path: "/admin/delivery-areas", title: t.manageDeliveryAreas, description: t.manageDeliveryAreasDesc },
     { path: "/admin/sell-requests", title: "Manage Sell Requests", description: "Manage user sell requests" },
     { path: "/admin/contacts", title: "Manage Contact Messages", description: "Manage user contact messages" },
-    
+    { path: "/admin/repair-requests", title: "Manage Repair Requests", description: "Manage user repair requests" }
+
   ];
 
   const sections = userType === "superadmin" ? superadminSections : adminSections;
