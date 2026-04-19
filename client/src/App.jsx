@@ -4,7 +4,7 @@ import HomePage from "./Pages/HomePage";
 import Navbar from "./Components/Shared/NavBar";
 import Footer from "./Components/Shared/Footer";
 
-import ProductsPage from "./Components/Products/Products";   // ← Updated import (change filename or import name)
+import ProductsPage from "./Components/Products/Products";   
 import ProductDetailsPage from "./Components/Products/ProductDetails";
 
 import CartPage from "./Components/Shared/Cart";
@@ -26,6 +26,7 @@ import AdminGallery from "./Components/Admin/AdminGallery";
 import ContactPage from "./Pages/Contact.tsx";
 import AdminSellRequests from "./Components/Admin/AdminSellRequests";
 import AdminContactMessages from "./Components/Admin/AdminContactMessages.jsx";
+import AdminRepairRequests from "./Components/Admin/AdminRepairRequests.jsx";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path="/admin/gallery" element={<AdminGallery />} /> 
           <Route path="/admin/sell-requests" element={<AdminSellRequests />} />
           <Route path="/admin/contacts" element={<AdminContactMessages />} />
+          <Route path="/admin/repair-requests" element={<AdminRepairRequests />} /> {/* Reusing AdminContactMessages for repair requests for now */}
         </Route>
 
         {/* 404 Route */}

@@ -11,6 +11,7 @@ import orderRoutes from './Routes/orderRoutes.js';
 import galleryRoutes from './Routes/galleryRoutes.js';
 import sellRequestRoutes from './Routes/sellRequestRoutes.js';
 import contactRoutes from './Routes/contactRoutes.js';
+import repairRequestRoutes from './Routes/repairRequestRoutes.js';
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/gallery', galleryRoutes);
 app.use('/api/sell-requests', sellRequestRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/repair-requests', repairRequestRoutes);
 
 app.use(errorHandler);
 
